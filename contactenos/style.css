@@ -1,0 +1,212 @@
+/* los estilos del main */
+
+section {
+  z-index: 2;
+  background-color: #fff;
+}
+
+.contacto {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  background-color: rgb(81, 89, 90);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.contactoTitle {
+  font-size: 5vw;
+  margin: 100px 0;
+  transition: 5s;
+  animation: backwards yphan 1.6s;
+}
+
+@keyframes yphan {
+  0% {
+    opacity: 0;
+    transform: translatex(-150px);
+  }
+}
+
+.contactoForm {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin-bottom: 2vw;
+}
+
+.div {
+  margin: 15px 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.label {
+  font-size: 1.5vw;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  transform: translateY(10px);
+  transition: all 0.5s;
+  animation: backwards yphan 1.2s;
+}
+
+.labelt {
+  font-size: 1.5vw;
+  animation: backwards yphan 1.2s;
+}
+
+.input {
+  cursor: default;
+  padding: 0.6em 0.3em;
+  font-size: 1vw;
+  color: #fff;
+  outline: none;
+  background: none;
+  border: none;
+  border-bottom: 2px solid #fff;
+  animation: backwards yphan 0.8s;
+}
+
+.area {
+  border: 2px solid #fff;
+}
+
+.button:hover {
+  color: #25a6a6;
+  background: #fff;
+  border-top: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  transform: scale(1.2);
+}
+
+.input:focus + .label,
+.input:not(:placeholder-shown) + .label {
+  transform: translateY(-12px) scale(0.7);
+  transform-origin: top left;
+  color: cyan;
+}
+
+@media screen and (max-width: 960px) {
+  .contactoTitle {
+    font-size: 7.5vw;
+  }
+
+  .contactoForm {
+    width: 50%;
+  }
+
+  .label {
+    font-size: 3vw;
+  }
+
+  .labelt {
+    font-size: 3vw;
+  }
+
+  .input {
+    font-size: 2.3vw;
+  }
+
+  .button {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .contactoTitle {
+    font-size: 11vw;
+  }
+
+  .contactoForm {
+    width: 75%;
+  }
+
+  .label {
+    font-size: 6vw;
+  }
+
+  .labelt {
+    font-size: 6vw;
+  }
+
+  .input {
+    font-size: 4.6vw;
+  }
+
+  .button {
+    font-size: 6vw;
+  }
+}
+
+/* los estilos de las redes  */
+
+.redes {
+  background-color: rgb(30, 28, 28);
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.redesTitle {
+  font-size: 3vw;
+  padding: 80px 30px;
+}
+
+.redes__botones {
+  padding: 0 100px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.redes__container {
+  margin-bottom: 100px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.redes__text {
+  font-size: 2vw;
+}
+
+.redes__button {
+  background: none;
+  border-radius: 50%;
+  border: none;
+  transition: 0.3s;
+  padding: 30px;
+}
+
+.redes__button svg {
+  fill: #fff;
+  transition: 0.3s;
+  border-radius: 40%;
+  transform: scale(3);
+}
+
+.redes__button svg:hover {
+  background-color: #fff;
+  fill: #25a6a6;
+  transform: scale(3.5);
+}
+
+@media screen and (max-width: 480px) {
+  .redesTitle {
+    font-size: 6vw;
+  }
+
+  .redes__text {
+    font-size: 4vw;
+  }
+
+  .redes__botones {
+    padding: 0 40px;
+  }
+}
